@@ -11,3 +11,9 @@ To run:
 To deploy:
 
     gcloud preview app deploy app.yaml
+
+
+To get local image resizing working I had to do:
+
+    sudo pip install pillow
+    export PYTHONPATH="/lib/python2.7/site-packages:/usr/local/google_appengine"

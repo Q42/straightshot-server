@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+<head>
+  <title>Straightshot</title>
+</head>
+<body>
+<h1>Straightshot</h1>
+
+<ul>
+  {% for file in files %}
+    <li>
+      {{file.createdDate}}<br>
+      <a href="{{file.serving_url}}"><img src="{{file.serving_url}}=s400"></a>
+    </li>
+  {% endfor %}
+</ul>
+
+</body>
+</html>
+{% endautoescape %}
