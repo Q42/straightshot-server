@@ -11,7 +11,7 @@
   {% for file in files %}
     <li>
       {{file.createdDate}}<br>
-      <a href="{{file.serving_url}}"><img src="{{file.serving_url}}=s400"></a>
+      <a href="{{file.serving_url}}=s32767"><img src="{{file.serving_url}}=s400"></a>
     </li>
   {% endfor %}
 </ul>
