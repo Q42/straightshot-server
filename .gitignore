@@ -1,3 +1,5 @@
 *.pyc
 .idea
 lib
+
+client_secrets.json
